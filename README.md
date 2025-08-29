@@ -12,6 +12,9 @@
 
 A beautiful, interactive visualization tool that analyzes JavaScript/TypeScript codebases and generates visual dependency graphs. Perfect for understanding code structure, identifying complexity hotspots, and onboarding new developers.
 
+<img width="1895" height="924" alt="image" src="https://github.com/user-attachments/assets/c0e9bf94-d50a-4e63-9350-66ae8941feb9" />
+
+<img width="1888" height="902" alt="image" src="https://github.com/user-attachments/assets/014567ae-e75d-46dc-890a-5ac55a0477a1" />
 
 ## ✨ Features
 
