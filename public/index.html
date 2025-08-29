@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Codebase Knowledge Map</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.5/d3.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <h1>🗺️ Codebase Knowledge Map</h1>
+        <div class="controls">
+            <button class="file-input" onclick="loadSampleData()">Load Data</button>
+            <button class="file-input" onclick="toggleFullscreen()">🔍 Fullscreen</button>
+            <button class="file-input" onclick="fitToScreen()">📐 Fit View</button>
+            <button class="file-input" onclick="toggleSidebar()">📋 Toggle Sidebar</button>
+            <button class="file-input" onclick="showHelp()">❓ Help</button>
+        </div>
+        <div class="stats">
+            <div class="stat-item">
+                <div class="stat-number" id="file-count">0</div>
+                <div>Files</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number" id="function-count">0</div>
+                <div>Functions</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number" id="complexity-count">0</div>
+                <div>Avg Complexity</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <div class="sidebar">
+            <div class="function-list">
+                <h3>🔧 Functions</h3>
+                <div id="functions-list"></div>
+            </div>
+            
+            <div class="hotspots">
+                <h3>🔥 Complexity Hotspots</h3>
+                <div id="hotspots-list"></div>
+            </div>
+        </div>
+
+        <div class="visualization">
+            <div id="graph-container">
+                <div class="empty-state">
+                    <div class="empty-state-icon">📊</div>
+                    <div>Click "Load Data" to analyze the codebase</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="tooltip" id="tooltip"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
